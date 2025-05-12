@@ -1,0 +1,277 @@
+header {
+  background-repeat: no-repeat;
+  background: rgba(255, 255, 255, 0);
+  position: absolute;
+  display: flex;
+  justify-content: center; /* Centers the image */
+  align-items: center;
+  height: 15%;
+  width: 100%;
+}
+
+/* Button styles */
+button {
+  margin-top: 0vw;
+  background-color: rgba(43, 143, 0, 0);
+}
+
+/* Body styles */
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://textur.gas-kvas.com/uploads/posts/2024-10/textur-gas-kvas-com-7ppo-p-teksturi-pikselnaya-kamnya-5.jpg);
+}
+
+/* Main content styles */
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15%;
+  padding-top: 15%;
+  background-color: rgba(0, 0, 0, 0.428);
+  flex: 1; /* Ensures footer stays at the bottom */
+}
+
+aside {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.428);
+  margin-top: 11.5vw;
+  padding: 10px;
+  width: 200px;
+}
+
+/* List styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: block;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Submenu styles */
+.submenu {
+  display: none;
+  list-style: none;
+  padding-left: 5px;
+}
+
+/* Menu button styles */
+.menu-button {
+  width: 90%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+img {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.aside {
+  margin-top: 20vw;
+}
+
+.art {
+  color: aliceblue;
+  text-align: center;
+}
+
+.but2 {
+  margin-top: 0vw;
+  width: 66vw;
+  height: 30vw;
+  background-image: url(https://i.postimg.cc/R0gk61Fm/2021-07-11-17-34-23.png);
+  background-repeat: no-repeat;
+}
+
+.but3 {
+  margin-top: 0vw;
+  width: 66vw;
+  height: 30vw;
+  background-image: url("C:\Users\Legion\Desktop\html\dregoraoplenty_1.jpg");
+  background-repeat: no-repeat;
+}
+
+.but4 {
+  margin-top: 0vw;
+  width: 66vw;
+  height: 30vw;
+  background-image: url(https://www.9minecraft.net/wp-content/uploads/2022/05/Framed-Blocks-Mod-Screenshots-10.jpg);
+  background-repeat: no-repeat;
+}
+
+.but5 {
+  margin-top: 0vw;
+  width: 66vw;
+  height: 30vw;
+  background-image: url(https://www.9minecraft.net/wp-content/uploads/2020/11/MedievalCraft-Mod.jpg);
+  background-repeat: no-repeat;
+}
+
+a {
+  color: aliceblue;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Контент страницы растягивается, чтобы футер оставался внизу */
+main {
+  flex: 1;
+}
+
+.minecraft-footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links a {
+  margin: 0 10px;
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.footer-copy {
+  margin-top: 15px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  aside {
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+  }
+
+  main {
+    margin: 0 5vw;
+    padding-top: 5vw;
+  }
+
+  .art {
+    padding: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .social-links {
+    flex-direction: column;
+  }
+
+  .social-links a {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    width: 100%;
+  }
+
+  .menu-button {
+    font-size: 14px;
+  }
+
+  .footer-logo {
+    width: 80px;
+  }
+
+  .social-links a img {
+    width: 25px;
+    height: 25px;
+  }
+
+  main {
+    margin: 0 2vw;
+    padding-top: 10vw;
+  }
+
+  .art {
+    font-size: 14px;
+  }
+
+  article h1, article h2, article h3 {
+    font-size: 1.2em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+button{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}

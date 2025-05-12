@@ -1,0 +1,182 @@
+/* Header styles */
+header {
+  background-repeat: no-repeat;
+  background: rgba(255, 255, 255, 0);
+  position: absolute;
+  display: flex;
+  justify-content: center; /* Centers the image */
+  align-items: center;
+  height: 15%;
+  width: 100%;
+}
+
+/* Button styles */
+button {
+  margin-top: 0vw;
+  background-color: rgba(43, 143, 0, 0);
+}
+
+/* Body styles */
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://textur.gas-kvas.com/uploads/posts/2024-10/textur-gas-kvas-com-7ppo-p-teksturi-pikselnaya-kamnya-5.jpg);
+}
+
+/* Main content styles */
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15%;
+  padding-top: 15%;
+  background-color: rgba(0, 0, 0, 0.428);
+  flex: 1; /* Ensures footer stays at the bottom */
+}
+
+/* Aside styles */
+aside {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.428);
+  margin-top: 11.5vw;
+  padding: 10px;
+  width: 200px;
+}
+
+/* List styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Link styles */
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: block;
+  padding: 3px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* Submenu styles */
+.submenu {
+  display: none;
+  list-style: none;
+  padding-left: 5px;
+}
+
+/* Menu button styles */
+.menu-button {
+  width: 90%;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* Span styles */
+span {
+  cursor: pointer;
+}
+
+/* Image styles */
+img {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+/* Art styles */
+.art {
+  color: aliceblue;
+  text-align: center;
+  border: none;
+}
+
+.but2, .but3, .but4, .but5 {
+  cursor: pointer;
+  margin-top: 0;
+  width: 98%;
+  height: auto;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.but2 img, .but3 img, .but4 img, .but5 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* HTML and body styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.minecraft-footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-logo {
+  width: 100px;
+  height: auto;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.social-links {
+  margin-top: 10px;
+  display: flex; /* Add this line */
+  justify-content: center; /* Add this line */
+}
+
+.social-links a {
+  margin: 0 10px; /* Add some spacing between icons */
+}
+
+.social-links a img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.footer-copy {
+  margin-top: 15px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  font-family: 'Times New Roman', Times, serif;
+}
+button{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}

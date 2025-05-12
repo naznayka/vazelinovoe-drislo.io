@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commands</title>
+  <link href="../styles/Commands.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <aside>
+    <ul>
+        <li><a class="menu-button" onclick="toggleSubmenu()">Моды</a></li>
+        <ul class="submenu" id="modsList">
+            <li><a href="WhenDungeonsArise.html">Мод 1</a></li>
+            <li><a href="Dregora.html">Мод 2</a></li>
+            <li><a href="FramedBlocks.html">Мод 3</a></li>
+            <li><a href="MedievalCraft.html">Мод 4</a></li>
+        </ul>
+    </ul>
+    <ul>
+        <li><a href="Commands.html" class="menu-button">Команды</a></li>
+    </ul>
+    <ul>
+        <li><a href="Seed.html" class="menu-button">Сиды</a></li>
+    </ul>
+    <form action="#" method="post" style="margin-top: 20px; padding: 10px; background-color: rgba(255, 255, 255, 0.2); border-radius: 10px; color: white;">
+      <h3>Регистрация</h3>
+      <label for="username">Имя пользователя:</label><br>
+      <input type="text" id="username" name="username" required><br><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="password">Пароль:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+      
+      <button type="submit">Зарегестрироваться</button>
+    </form>
+  </aside>
+
+  <script>
+  function toggleSubmenu() {
+      var submenu = document.getElementById("modsList");
+      submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+  }
+  </script>
+  <header>
+    <a href="Main.html">
+      <img src="../images/minelogo.png" width="100%" style="margin: 0%, 50%, 0%, 50%;">
+    </a>
+  </header>
+  <main>
+    <div class="art">
+      <article><h1>Зачем нужны консольные команды?</h1></article>
+      <article><h3>Консольные команды нужны для воздействия на геймплей игры. Таким образом, пользователь получает в руки относительно простой, но очень эффективный инструмент для изменения игрового процесса. Если в первых версиях Minecraft, например, смена погоды была под силу только самой программе, то сейчас подобные манипуляции происходят за пару секунд с помощью консольного окна, куда вводятся соответствующие инструкции. В общем, рассматриваемый метод позволяет максимально легко и быстро изменять что-то внутри игры по желанию юзера.</h3></article>
+      <article><h2>Help</h2></article>
+      <article><h3>/help [имя_команды] Показывает краткую информацию по конкретной команде. Например, «/help give» расскажет вам о команде «give» чуть подробнее.</h3></article>
+      <img src="https://i.ytimg.com/vi/2jPsB3TA630/maxresdefault.jpg" alt="">
+      <article><h2>Give</h2></article>
+      <article><h3>Give /give @[игрок] [предмет] [количество] [значение] Используется для передачи другим игрокам предметы из собственного инвентаря. Например, «/give @Oceanic minecraft:planks 13 1». Эта команда передаст игроку Oceanic 13 блоков «Spruce Wood Planks». Применять ее значительно проще, когда передается только один объект, но она также подходит и для сложного обмена предметами.</h3></article>
+      <img src="https://www.digminecraft.com/game_commands/images/give_gold_blocks.png" alt="">
+      <article><h2>Teleport</h2></article>
+      <article><h3>/tp [игрок] [координаты x y z] Используется для мгновенного перемещения себя или другого игрока в конкретное место в мире. Если вместо координат вписать имя другого игрока, то такая команда перенесет вам прямо к нему. В начале можно запутаться в этих самых координатах, так как мир трехмерный, а особые проблемы вызывает z-координата, но со временем все встает на свои места.</h3></article>
+      <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/minecraft/3/39/Minecraft_Teleport.jpg" alt="">
+      <article><h2>Gamemode</h2></article>
+      <article><h3>Позволяет менять режим игры. Например, «/gamemode creative» переведет игру в режим «Creative», когда можно летать, ресурсы бесконечны, а монстры перестают вас атаковать. Соответственно, «/gamemode survival» отправит вас в суровые реалии режима «Survival», где каждый паук мечтает вами пообедать, а ресурсы нужно добывать потом и кровью.</h3></article>
+      <img src="https://staticg.sportskeeda.com/editor/2021/05/b4bc9-16218669033506-800.jpg" alt="">
+      <article><h2>Set time</h2></article>
+      <article><h3>Позволяет управлять временем суток. Например, «/time set 0» - это рассвет. Значение в 6000 - это полдень, 12000 - закат, а 18000 - ночь.</h3></article>
+      <img src="https://progameguides.com/wp-content/uploads/2021/05/minecraftSetTime.png?fit=1200%2C675" alt="">
+      <article><h2>Difficulty</h2></article>
+      <article><h3>Позволяет менять сложность игры. Например, «/difficulty peaceful» выставляет самый легкий режим игры. Также есть еще варианты «easy», «normal» и «hard» по возрастанию сложности.</h3></article>
+      <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/1d/Difficulty_Lock.png/revision/latest?cb=20230605033103" alt="">
+      <article><h2>Seed</h2></article>
+      <article><h3>Данная команда позволяет узнать идентификатор «зерна», из которого родился конкретный мир. Его можно записать, чтобы при необходимости создать его точную копию в будущем.</h3></article>
+      <img src="https://staticg.sportskeeda.com/editor/2022/04/10826-16504027959910-1920.jpg" alt="">
+      <article><h2>Gamerule</h2></article>
+      <article><h3>Позволяет управлять некоторыми фундаментальными установками игры. Например, «/gamerule keepInventory true» позволяет не терять предметы из инвентаря при гибели персонажа. Соответственно, «/gamerule keepInventory false» работает обратным образом. Другим примером может послужить команда «/gamerule doDaylightCycle false», которая отключит смену дня и ночи, оставив вас существовать в мире, погруженным в вечный мрак или же постоянно залитым светом солнца в зависимости от того момента, когда вы ее активируете.</h3></article>
+      <img src="https://staticg.sportskeeda.com/editor/2021/10/ee425-16338894354419-800.jpg" alt="">
+      <article><h2>На самом деле, все указанные выше команды носят базовый характер. Тем не менее, с их помощью можно достаточно быстро освоить весь консольный инструментарий игры.</h2></article>
+    </div>
+  </main>
+  <footer class="minecraft-footer">
+    <div class="footer-content">
+        <img src="../images/minecraft.png" alt="Minecraft Logo" class="footer-logo">
+        <div class="social-links">
+            <a href="https://www.facebook.com/minecraft/?locale=ru_RU"><img src="../images/facebook.png" alt="Facebook"></a>
+            <a href="https://x.com/Minecraft?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/minecraft"><img src="../images/youtube.png" alt="YouTube"></a>
+            <a href="Main.html"><img src="../images/curseforge-logo.png" alt="Mods"></a>
+            <a href="Commands.html"><img src="../images/obratnyj-slesh-na-klaviature-kak-postavit-na-pk-ili-noutbuke-windows.png" alt="Commandss"></a>
+        </div>
+    </div>
+    <p class="footer-copy">&copy; 2025 Minecraft Fan Site. Все права запрещены.</p>
+  </footer>
+</body>
+</html>

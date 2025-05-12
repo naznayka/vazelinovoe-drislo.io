@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="../styles/Mods.css" rel="stylesheet" type="text/css"
+</head>
+<body>
+  <aside>
+    <ul>
+      <li><a class="menu-button" onclick="toggleSubmenu()">Моды</a></li>
+        <ul class="submenu" id="modsList">
+            <li><a href="WhenDungeonsArise.html">Мод 1</a></li>
+            <li><a href="Dregora.html">Мод 2</a></li>
+            <li><a href="FramedBlocks.html">Мод 3</a></li>
+            <li><a href="MedievalCraft.html">Мод 4</a></li>
+        </ul>
+    </ul>
+    <ul>
+        <li><a href="Commands.html" class="menu-button">Команды</a></li>
+    </ul>
+    <ul>
+        <li><a href="Seed.html" class="menu-button">Сиды</a></li>
+    </ul>
+    <form action="#" method="post" style="margin-top: 20px; padding: 10px; background-color: rgba(255, 255, 255, 0.2); border-radius: 10px; color: white;">
+      <h3>Регистрация</h3>
+      <label for="username">Имя пользователя:</label><br>
+      <input type="text" id="username" name="username" required><br><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="password">Пароль:</label><br>
+      <input type="password" id="password" name="password" required><br><br>
+      
+      <button type="submit">Зарегестрироваться</button>
+    </form>
+</aside>
+
+<script>
+function toggleSubmenu() {
+    var submenu = document.getElementById("modsList");
+    submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+}
+</script>
+<header>
+  <a href="Main.html">
+    <img  src="../images/minelogo.png" width="100%" style="margin: 0%, 50%, 0%, 50%;">
+    </a>
+</header>
+<main>
+  <div class="art">
+    <span onclick="location.href='WhenDungeonsArise.html'" class="article-link">
+      <article><h2>When Dungeons Arise [1.20.1] [1.19.4] [1.18.2] [1.16.5]</h2></article>
+    </span>
+    <button onclick="location.href='WhenDungeonsArise.html'" class="but2">
+      <img src="https://preview.redd.it/wyjv56nxo7f71.png?auto=webp&s=e3e6fe1994acb81ac5ac93d7b23c3e25353fe61f" alt="Image for but2">
+    </button>
+    <span onclick="location.href='Dregora.html'" class="article-link">
+      <article><h2>Dregora [1.16.5] [1.12.2]</h2></article>
+    </span>
+    <button onclick="location.href='Dregora.html'" class="but3">
+      <img src="https://www.dregora.com/wp-content/uploads/2024/02/dregoraoplenty_1.jpg" alt="Image for but3">
+    </button>
+    <span onclick="location.href='FramedBlocks.html'" class="article-link">
+      <article><h2>FramedBlocks [1.20.1] [1.19.4] [1.18.2] [1.16.5]</h2></article>
+    </span>
+    <button onclick="location.href='FramedBlocks.html'" class="but4">
+      <img src="https://api.minecraftstorage.com/storage/posts/955fbf8b-2ce7-4080-a37d-c98684800ab8/mainphoto/full/framedblocks.webp" alt="Image for but4">
+    </button>
+    <span onclick="location.href='MedievalCraft.html'" class="article-link">
+      <h2>Medieval Craft [1.20.1] [1.19.2] [1.16.5] [1.12.2]</h2>
+    </span>
+    <button onclick="location.href='MedievalCraft.html'" class="but5">
+      <img src="https://i.tlauncher.org/images/2021-04-12-19.png" alt="Image for but5">
+    </button>
+  </div>
+</main>
+
+</body>
+<footer class="minecraft-footer">
+  <div class="footer-content">
+      <img src="../images/minecraft.png" alt="Minecraft Logo" class="footer-logo">
+      <div class="social-links">
+          <a href="https://www.facebook.com/minecraft/?locale=ru_RU"><img src="../images/facebook.png" alt="Facebook"></a>
+          <a href="https://x.com/Minecraft?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../images/twitter.png" alt="Twitter"></a>
+          <a href="https://www.youtube.com/minecraft"><img src="../images/youtube.png" alt="YouTube"></a>
+          <a href="Main.html"><img src="../images/curseforge-logo.png" alt="Mods"></a>
+          <a href="Commands.html"><img src="../images/obratnyj-slesh-na-klaviature-kak-postavit-na-pk-ili-noutbuke-windows.png" alt="Commandss"></a>
+      </div>
+  </div>
+  <p class="footer-copy">&copy; 2025 Minecraft Fan Site. Все права запрещены.</p>
+</footer>
+</html>
